@@ -1,6 +1,8 @@
 // www.numericelements.com
 // <nu>meric elemen<ts> = nuts
 /*global nuts*/
+/*global console*/
+
 
 
 nuts.TrustRegionSubproblem = function (gradient, hessian, k_easy, k_hard) {
@@ -52,14 +54,14 @@ nuts.TrustRegionSubproblem.prototype = {
             relative_error,
             quadraticTerm,
             sls,
-            vNorm;
-            //nit = 0;
+            vNorm,
+            nit = 0;
 
 
 
         while (true) {
 
-            /*
+
             nit += 1;
             if (nit > 1000) {
                 break;
@@ -67,7 +69,7 @@ nuts.TrustRegionSubproblem.prototype = {
             if (nit > 100) {
                 console.log(100);
             }
-            */
+
 
 
 

@@ -11,7 +11,9 @@ nuts.CholeskyDecomposition = function (symmetricMatrix) {
     this.g = symmetricMatrix.squareMatrix();
     this.success = false;
     this.CLOSE_TO_ZERO = 10e-8;
-    this.firstNonPositiveDefiniteLeadingSubmatrixSize = 1;
+    this.firstNonPositiveDefiniteLeadingSubmatrixSize = undefined;
+    //this.firstNonPositiveDefiniteLeadingSubmatrixSize = 1;
+
 
     if (this.g.get(0, 0) < this.CLOSE_TO_ZERO) {
         return;
