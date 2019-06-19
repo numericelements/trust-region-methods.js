@@ -1,4 +1,3 @@
 # trust-region-methods.js
-Trust-region methods in JavaScript
+Trust-region methods in Typescript
 
-For now, it's essentially a JavaScript translation of : https://github.com/scipy/scipy/blob/master/scipy/optimize/_trustregion_exact.py
